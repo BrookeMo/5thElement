@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Email from "./Contact/Contact/Email";
 
 class Contact extends Component {
     state = {
