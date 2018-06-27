@@ -1325,7 +1325,7 @@ moment-timezone@^0.5.14:
   dependencies:
     moment ">= 2.9.0"
 
-"moment@>= 2.9.0", moment@^2.20.0:
+"moment@>= 2.9.0", moment@^2.20.0, moment@^2.22.2:
   version "2.22.2"
   resolved "https://registry.yarnpkg.com/moment/-/moment-2.22.2.tgz#3c257f9839fc0e93ff53149632239eb90783ff66"
 
@@ -1758,6 +1758,10 @@ react-materialize@^2.3.1:
     classnames "^2.2.5"
     react "^16.2.0"
     react-dom "^16.2.0"
+
+react-moment@^0.7.7:
+  version "0.7.7"
+  resolved "https://registry.yarnpkg.com/react-moment/-/react-moment-0.7.7.tgz#b509bd903de1c984d54c4c5d54bd5bfd007490a6"
 
 react@^16.2.0:
   version "16.4.1"
