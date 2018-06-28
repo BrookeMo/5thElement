@@ -3,31 +3,22 @@ import Review from "./../../components/review";
 import { Input, TextArea, FormBtn } from "../../components/Form";
 import API from './../../utils/API'
 
-
-import DeleteBtn from "../../components/DeleteBtn";
-import Jumbotron from "../../components/Jumbotron";
-
-import { Link } from "react-router-dom";
-import { Col, Row, Container } from "../../components/Grid";
-import { List, ListItem } from "../../components/List";
-
 class Reviews extends Component {
-
 state = {
-    review: [],
+    reviewlist: [],
     text: "",
     location: "",
     author: ""
   };
 
-  componentDidMount(){
+  componentDidMount() {
     this.loadReviews();
   };
 
   loadReviews = () => {
     API.getReviews()
       .then(res =>
-        this.setState({ reviews: res.data, location: "", author: "", text: "" })
+        this.setState({ review: res.data, location: "", author: "", text: "" })
       )
       .catch(err => console.log(err));
   };
@@ -59,8 +50,8 @@ state = {
   };
 
 
-  render() {
-    return (
+render (){
+  return (
     <main>
       <div className="row">
         <div className="col s12">
@@ -100,34 +91,17 @@ state = {
                 </form>
               </div>
               <div className="col s2 offset-s4">
-                <a
-                  className="dropdown-trigger filter"
-                  href="#!"
-                  data-target="dropdown1"
-                >
-                  Filter By:<i id="dropdownicon" className="material-icons">
-                    arrow_drop_down
-                  </i>
-                </a>
-                <ul id="dropdown1" className="dropdown-content">
-                  <li>
-                    <a href="#!">distance</a>
-                  </li>
-                  <li>
-                    <a href="#!">rating</a>
-                  </li>
-                  <li>
-                    <a href="#!">$$$</a>
-                  </li>
-                </ul>
+              <p>
+                    <Review />
+                  </p>
               </div>
             </div>
             <div className="row">
               <div className="col s12">
                 <div className="container">
-                  <p>
+                  {/* <p>
                     <Review />
-                  </p>
+                  </p> */}
                   {/* <div className="card-panel hotel"></div>
                                             <div className="card-panel hotel"></div> */}
                 </div>
@@ -138,6 +112,6 @@ state = {
       </div>
     </main>
   );
-  };
+};
 };
 export default Reviews;
