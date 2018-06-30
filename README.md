@@ -8,4 +8,4 @@ Taking a vacation together, as a family, can be one of the bigger challenges wit
 As a parent of an individual on the spectrum you can be assured that the destinations featured on Accesible Travel have been certified or highly recommended by those in the Autism community.
 # 5thElement
 
-[Screenshot] (./client/public/assets/images/screenShotReadme.PNG)
+![Screenshot] (/client/public/assets/images/screenShotReadme.PNG)
